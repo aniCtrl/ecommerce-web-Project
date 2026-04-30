@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router';
 import { Homepage } from './pages/Homepage'
 import { CheckoutPage } from './pages/CheckoutPage';
 import { OrdersPage } from './pages/OrdersPage';
+import { TrackingPage } from './pages/TrackingPage';
 import './App.css'
 
 
@@ -13,6 +14,7 @@ function App() {
       <Route index element={<Homepage/>} />
       <Route path="checkout" element={<CheckoutPage />} />
       <Route path="orders" element={<OrdersPage />} />
+      <Route path="tracking" element={< TrackingPage/>} />
     </Routes>
    
   )
