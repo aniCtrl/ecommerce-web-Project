@@ -6,7 +6,6 @@ import { OrdersPage } from './pages/OrdersPage';
 import { TrackingPage } from './pages/TrackingPage';
 import './App.css'
 
-
 function App() {
 
   return (
