@@ -39,6 +39,19 @@
   border: 1px solid white;
 }
 
+.header .brand-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header .brand-logo-icon {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
 .header .brand-logo-text {
   font-size: 22px;
   font-weight: 800;

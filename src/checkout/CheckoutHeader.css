@@ -27,7 +27,17 @@
 }
 
 .checkout-header .brand-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
+}
+
+.checkout-header .brand-logo-icon {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  border-radius: 4px;
 }
 
 .checkout-header .brand-logo-text {
