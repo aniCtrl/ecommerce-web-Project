@@ -26,31 +26,22 @@
   width: 200px;
 }
 
-.checkout-header .logo {
-  height: 26px;
-  margin-top: 0px;
+.checkout-header .brand-link {
+  text-decoration: none;
 }
 
-.checkout-header .mobile-logo {
-  display: none;
+.checkout-header .brand-logo-text {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: rgb(8, 79, 45);
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* @media is used to create responsive design (making the
-   website look good on any screen size). This @media
-   means when the screen width is 575px or less, different
-   styles (inside the {...}) will be applied. */
 @media (max-width: 575px) {
   .checkout-header .checkout-header-left-section {
     width: auto;
-  }
-
-  .checkout-header .logo {
-    display: none;
-  }
-
-  .checkout-header .mobile-logo {
-    display: inline-block;
-    height: 26px;
   }
 }
 
