@@ -20,12 +20,12 @@ export function OrderSummary({cart, deliveryOptions, loadCart}) {
         return (
           <div key={cartItem.productId} className="cart-item-container">
             <div className="delivery-date">
-              Delivery date: {dayjs(selectedDeliveryOption.estimatedDeliveryTimeMs).format('dddd MMMM D')}
+              Delivery date: {selectedDeliveryOption ? dayjs(selectedDeliveryOption.estimatedDeliveryTimeMs).format('dddd MMMM D') : 'Select delivery option'}
             </div>
 
             <div className="cart-item-details-grid">
               <img className="product-image"
-                src={cartItem.product.image} />
+                src={cartItem.product?.image} alt={cartItem.product?.name || ''} />
 
               <div className="cart-item-details">
                 <div className="product-name">

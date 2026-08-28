@@ -5,9 +5,13 @@ import axios from 'axios';
 export function PaymentSummary({paymentSummary, loadCart}) {
   const navigate = useNavigate();
   const createOrder = async() => {
-    await axios.post('/api/orders');
-    await loadCart();
-    navigate('/orders');
+    try {
+      await axios.post('/api/orders');
+      await loadCart();
+      navigate('/orders');
+    } catch (err) {
+      console.error('Failed to create order:', err);
+    }
   };
   return (
     <div className="payment-summary">
