@@ -19,8 +19,6 @@ export function OrdersPage({ cart }) {
   }, []);
   return (
     <>
-      <title>Orders</title>
-
       <Header cart={cart} />
 
       <div className="orders-page">

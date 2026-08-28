@@ -21,8 +21,6 @@ export function CheckoutPage({ cart, loadCart }) {
     [cart]);
   return (
     <>
-      <title>Checkout</title>
-
       <CheckoutHeader cart={cart} />
 
       <div className="checkout-page">
