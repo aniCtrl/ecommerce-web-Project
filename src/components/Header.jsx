@@ -12,7 +12,7 @@ export function Header({ cart }) {
     <div className="header">
       <div className="left-section">
         <Link to="/" className="header-link brand-link">
-          <span className="brand-logo-text">Try<span className="brand-logo-accent">Me</span></span>
+          <span className="brand-logo-text">TryMe</span>
         </Link>
       </div>
 
@@ -26,7 +26,6 @@ export function Header({ cart }) {
 
       <div className="right-section">
         <Link className="orders-link header-link" to="/orders">
-
           <span className="orders-text">Orders</span>
         </Link>
 

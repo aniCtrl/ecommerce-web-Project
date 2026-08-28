@@ -1,8 +1,8 @@
 .header {
-  background-color: #0f172a;
+  background-color: rgb(8, 79, 45);
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   display: flex;
   align-items: center;
@@ -12,9 +12,8 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 64px;
+  height: 60px;
   z-index: 1000;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .header .left-section {
@@ -29,29 +28,23 @@
 
 .header .header-link {
   display: inline-block;
-  padding: 6px 12px;
-  border-radius: 6px;
+  padding: 6px 9.5px;
+  border-radius: 2px;
   cursor: pointer;
   text-decoration: none;
-  border: 1px solid transparent;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .header .header-link:hover {
-  border-color: rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid white;
 }
 
 .header .brand-logo-text {
   font-size: 22px;
   font-weight: 800;
   letter-spacing: -0.5px;
-  color: #ffffff;
-  font-family: 'Roboto', system-ui, sans-serif;
-}
-
-.header .brand-logo-accent {
-  color: #6366f1;
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .header .middle-section {
@@ -76,36 +69,26 @@
 }
 
 .header .search-button {
-  background-color: #6366f1;
+  background-color: rgb(186, 255, 190);
   border: none;
-  width: 48px;
+  width: 45px;
   height: 40px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   flex-shrink: 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.15s ease;
-}
-
-.header .search-button:hover {
-  background-color: #4f46e5;
 }
 
 .header .search-icon {
   height: 20px;
-  filter: brightness(0) invert(1);
+  margin-left: 0px;
+  margin-top: 3px;
 }
 
 .header .right-section {
   width: 180px;
   flex-shrink: 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 8px;
+  justify-content: end;
 }
 
 .header .orders-link {
@@ -120,7 +103,7 @@
 .header .orders-text {
   display: block;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .header .cart-link {
@@ -131,25 +114,24 @@
 }
 
 .header .cart-icon {
-  width: 36px;
-  filter: brightness(0) invert(1);
+  width: 38px;
 }
 
 .header .cart-text {
   margin-left: 5px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .header .cart-quantity {
-  color: #6366f1;
-  font-size: 13px;
-  font-weight: 800;
+  color: rgb(8, 79, 45);
+  font-size: 14px;
+  font-weight: 700;
 
   position: absolute;
-  top: 7px;
-  right: 44px;
+  top: 8.5px;
+  right: 46px;
 
-  width: 24px;
+  width: 26px;
   text-align: center;
 }
