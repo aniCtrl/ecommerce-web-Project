@@ -8,7 +8,7 @@ export function CheckoutHeader({cart}) {
         <div className="header-content">
           <div className="checkout-header-left-section">
             <Link to="/" className="brand-link">
-              <img className="brand-logo-icon" src="images/brand-icon.jpg" alt="TryMe" />
+              <img className="brand-logo-icon" src="/brand-icon.jpg" alt="TryMe" />
               <span className="brand-logo-text">TryMe</span>
             </Link>
           </div>

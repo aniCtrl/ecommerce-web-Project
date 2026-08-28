@@ -32,7 +32,7 @@ export function Header({ cart }) {
     <div className="header">
       <div className="left-section">
         <Link to="/" className="header-link brand-link">
-          <img className="brand-logo-icon" src="images/brand-icon.jpg" alt="TryMe" />
+          <img className="brand-logo-icon" src="/brand-icon.jpg" alt="TryMe" />
           <span className="brand-logo-text">TryMe</span>
         </Link>
       </div>
