@@ -8,7 +8,7 @@ export function CheckoutHeader({cart}) {
         <div className="header-content">
           <div className="checkout-header-left-section">
             <Link to="/" className="brand-link">
-              <span className="brand-logo-text">STOREFRONT</span>
+              <span className="brand-logo-text">Try<span className="brand-logo-accent">Me</span></span>
             </Link>
           </div>
 

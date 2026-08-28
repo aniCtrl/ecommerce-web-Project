@@ -12,7 +12,7 @@ export function Header({ cart }) {
     <div className="header">
       <div className="left-section">
         <Link to="/" className="header-link brand-link">
-          <span className="brand-logo-text">STOREFRONT</span>
+          <span className="brand-logo-text">Try<span className="brand-logo-accent">Me</span></span>
         </Link>
       </div>
 

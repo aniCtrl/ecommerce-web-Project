@@ -31,12 +31,15 @@
 }
 
 .checkout-header .brand-logo-text {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
-  letter-spacing: 1.5px;
-  color: rgb(8, 79, 45);
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
+  letter-spacing: -0.5px;
+  color: #0f172a;
+  font-family: 'Roboto', system-ui, sans-serif;
+}
+
+.checkout-header .brand-logo-accent {
+  color: #6366f1;
 }
 
 @media (max-width: 575px) {
@@ -58,10 +61,11 @@
 }
 
 .checkout-header .return-to-home-link {
-  color: rgb(25, 135, 84);
+  color: #6366f1;
 
   text-decoration: none;
   cursor: pointer;
+  font-weight: 600;
 }
 
 @media (max-width: 1000px) {

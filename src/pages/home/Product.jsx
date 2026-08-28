@@ -3,18 +3,25 @@ import { formatMoney } from '../../utils/money';
 import axios from 'axios';
 
 export function Product({product, loadCart}) {
-   const [quantity, setQuantity] = useState(1);
-   const addToCart = async () => {
-          await axios.post('/api/cart-items', {
-            productId: product.id,
-            quantity
-          });
-          await loadCart();
-        };
+  const [quantity, setQuantity] = useState(1);
+  const [addedMessageVisible, setAddedMessageVisible] = useState(false);
+
+  const addToCart = async () => {
+    await axios.post('/api/cart-items', {
+      productId: product.id,
+      quantity
+    });
+    await loadCart();
+    setAddedMessageVisible(true);
+    setTimeout(() => {
+      setAddedMessageVisible(false);
+    }, 2000);
+  };
+
   const selectQuantity = (event) => {
-          const quantitySelected = Number(event.target.value);
-          setQuantity(quantitySelected);
-        };
+    const quantitySelected = Number(event.target.value);
+    setQuantity(quantitySelected);
+  };
           
   return (
 
@@ -22,8 +29,8 @@ export function Product({product, loadCart}) {
       data-testid="product-container">
       <div className="product-image-container">
         <img className="product-image"
-          data-testid = "product-image"
-          src={product.image} />
+          data-testid="product-image"
+          src={product.image} alt={product.name} />
       </div>
 
       <div className="product-name limit-text-to-2-lines">
@@ -32,8 +39,8 @@ export function Product({product, loadCart}) {
 
       <div className="product-rating-container">
         <img className="product-rating-stars"
-         data-testid = "product-rating-start-image"
-          src={`images/ratings/rating-${product.rating.stars * 10}.png`} />
+          data-testid="product-rating-start-image"
+          src={`images/ratings/rating-${product.rating.stars * 10}.png`} alt="" />
         <div className="product-rating-count link-primary">
           {product.rating.count}
         </div>
@@ -60,8 +67,8 @@ export function Product({product, loadCart}) {
 
       <div className="product-spacer"></div>
 
-      <div className="added-to-cart">
-        <img src="images/icons/checkmark.png" />
+      <div className="added-to-cart" style={{ opacity: addedMessageVisible ? 1 : 0, transition: 'opacity 0.2s ease' }}>
+        <img src="images/icons/checkmark.png" alt="" />
         Added
       </div>
 
